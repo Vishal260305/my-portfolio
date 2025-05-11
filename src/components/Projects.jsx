@@ -1,29 +1,38 @@
 import React from "react";
 import { FaGithub, FaVideo } from "react-icons/fa";
 
+// ✅ Import images the Vite-friendly way
+import notebookImg from "../assets/notebook.png";
+import newsImg from "../assets/news.png";
+import textImg from "../assets/text.png";
+
+// ✅ Project list
 const projects = [
   {
     title: "iNoteBook - Notebook on the Cloud",
-    description: "A full-stack note making application on the cloud that allows users to create, edit and delete personalized notes with proper security.",
-    image: "src/assets/notebook.png",
+    description:
+      "A full-stack note making application on the cloud that allows users to create, edit and delete personalized notes with proper security.",
+    image: notebookImg,
     tech: ["React", "Node.js", "MongoDB", "Express"],
     codeLink: "https://github.com/Vishal260305/iNotebook",
-    videoSrc: "/videos/demo.mp4", // Local video file
+    videoSrc: "/videos/demo.mp4", // should be in /public/videos folder
   },
   {
     title: "NewsNest - Explore the World!",
-    description: "A news application with latest news from different categories and user-friendly interface.",
-    image: "src/assets/news.png",
+    description:
+      "A news application with latest news from different categories and user-friendly interface.",
+    image: newsImg,
     tech: ["React", "Javascript", "Bootstrap", "Fetch API"],
     codeLink: "https://github.com/Vishal260305/NewsNest",
     videoSrc: "/videos/demo.mp4",
   },
   {
     title: "textAnalyze - Text Editor Tool",
-    description: "A text utlility tool on the web built using React that allows users to perform various functions with the text, live preview and time to read.",
-    image: "src/assets/text.png",
+    description:
+      "A text utility tool on the web built using React that allows users to perform various functions with the text, live preview and time to read.",
+    image: textImg,
     tech: ["React", "Javascript", "Bootstrap"],
-    codeLink: "https://github.com/Vishal260305/textAnalyze.",
+    codeLink: "https://github.com/Vishal260305/textAnalyze",
     videoSrc: "/videos/demo.mp4",
   },
 ];
@@ -54,7 +63,7 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Skills / Tech Stack */}
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tech.map((tech, idx) => (
                     <span
@@ -84,7 +93,6 @@ const Projects = () => {
                     <FaVideo className="text-lg" /> Demo
                   </button>
                 </div>
-
               </div>
             </div>
           ))}
