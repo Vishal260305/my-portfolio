@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-dark {
+    background-color: #0a0a23;
+  }
+  
+
+  /* index.css or global.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.skill-card {
+  transition: transform 0.3s ease;
+  perspective: 1000px;
+}
+
+.skill-card:hover {
+  transform: rotateX(10deg) rotateY(10deg);
+}
