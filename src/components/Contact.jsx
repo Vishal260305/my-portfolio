@@ -81,7 +81,7 @@ const Contact = () => {
                 <a href="mailto:2022uec1571@mnit.ac.in">
                   <FaEnvelope className="hover:text-[#5f00ff] transition" />
                 </a>
-                <a href="https://leetcode.com/u/_vg260305_/" target="_blank" rel="noopener noreferrer">
+                <a href="https://leetcode.com/u/_vg260305._/" target="_blank" rel="noopener noreferrer">
                   <FaCode className="hover:text-[#5f00ff] transition" />
                 </a>
               </div>
